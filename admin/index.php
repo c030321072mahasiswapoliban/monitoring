@@ -4,6 +4,9 @@ include 'koneksi/koneksi.php';
 if (!isset($_SESSION['admin'])) {
   header('location:login.php');
 }
+
+
+// if (isset())
 ?>
 
 <!DOCTYPE html>
@@ -35,3 +38,4 @@ if (!isset($_SESSION['admin'])) {
 <?php include 'assets/pages/main.php'; ?>
 
 <?php include 'assets/pages/footer.php'; ?>
+

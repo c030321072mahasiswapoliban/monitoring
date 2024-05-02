@@ -4,8 +4,6 @@ $data = mysqli_fetch_array($sql);
 $relay = $data['relay'];
 $relaysecond = $data['relaysecond'];
 
-
-
 ?>
 
 <main>
@@ -52,12 +50,6 @@ $relaysecond = $data['relaysecond'];
         <div class="divider card-divider"></div>
 
         <li class="progress-item">
-
-
-
-
-
-
 
       </div>
 
@@ -117,7 +109,7 @@ $relaysecond = $data['relaysecond'];
         <!-- end kekeruhan -->
 
 
-        
+
         <!-- level air -->
         <div class="card task-card">
           <div id="logovol">
@@ -154,24 +146,24 @@ $relaysecond = $data['relaysecond'];
 
       <div class="card revenue-card">
 
-      <p class="card-text">Hari Ini</p>
+        <p class="card-text"><?php include "tanggal.php" ?></p>
         <data class="card-title" id="tanggalsensor">
-     
+
         </data>
-       
+
         <p class="card-text">Hitung Cepat Rata" Kondisi Lingkungan Budidaya</p>
         <hr>
 
         <data class="card-title" id="tablesensor">
-        
+
         </data>
 
-     
-      </div>
-   
 
-    
-   
+      </div>
+
+
+
+
 
     </section>
 
