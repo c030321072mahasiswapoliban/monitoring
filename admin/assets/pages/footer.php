@@ -67,6 +67,7 @@
     setInterval(function() {
       $("#cekvol").load("./sensor/level/cek.php");
       $("#statvol").load("./sensor/level/status.php");
+      $("#logovol").load("./sensor/level/logo.php");
     }, 500);
   });
   // end sensor

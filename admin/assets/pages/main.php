@@ -116,6 +116,27 @@ $relaysecond = $data['relaysecond'];
         </div>
         <!-- end kekeruhan -->
 
+
+        
+        <!-- level air -->
+        <div class="card task-card">
+          <div id="logovol">
+
+          </div>
+
+
+
+          <div>
+            <data class="card-data" id="cekvol">0</data>
+            <div id="statvol">
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- end level air -->
+
         <!-- result sensor -->
         <div class="card task-card">
           <div id="logorest">
