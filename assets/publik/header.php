@@ -24,7 +24,7 @@
             </li>
   
             <li>
-              <a href="/monitoring/login.php" class="navbar-link icon-box">
+              <a href="login.php" class="navbar-link icon-box">
                 <span class="material-symbols-rounded  icon">settings</span>
 
                 <span>Pemeliharaan</span>

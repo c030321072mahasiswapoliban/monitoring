@@ -14,7 +14,7 @@ $ps = $row['password'];
 if($username == $user){
 	if(password_verify($pass, $ps)){
 		$_SESSION["admin"] = true;
-		header('location:admin.php');
+		header('location:admin');
 	}
 	else{
 		echo "
