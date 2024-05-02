@@ -1,1 +1,4 @@
-<?php echo  ?>
+<?php 
+include "../../koneksi/koneksi.php";
+
+?>
