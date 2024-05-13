@@ -1,25 +1,25 @@
+<!-- Footer -->
 <footer class="footer">
-  <div class="container">
-    <ul class="footer-list">
-      <li class="footer-item">
-        <a href="#" class="footer-link">About</a>
-      </li>
-      <li class="footer-item">
-        <a href="#" class="footer-link">Developers</a>
-      </li>
-      <li class="footer-item">
-        <a href="#" class="footer-link">Support</a>
-      </li>
-    </ul>
-    <p class="copyright">
-      &copy; 2024 <a href="#" class="copyright-link">poliBanjarmasin</a>. D3 TEKNIK Infromatika
-    </p>
-
-  </div>
+    <div class="container">
+        <ul class="footer-list">
+            <li class="footer-item">
+                <a href="login.php" class="footer-link" data-toggle="modal" data-target="#aboutModal">About</a>
+            </li>
+            <li class="footer-item">
+                <a href="#" class="footer-link">Developers</a>
+            </li>
+            <li class="footer-item">
+                <a href="#" class="footer-link">Support</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            &copy; 2024 <a href="#" class="copyright-link">Politeknik Banjarmasin</a>. D3 Teknik Informatika
+        </p>
+    </div>
 </footer>
 
-<!-- start script -->
 
+<!-- start script -->
 <script src="./assets/js/script.js"></script>
 <script type="text/javascript" src="./assets/jquery/jquery.min.js"></script>
 <script type="text/javascript">
@@ -29,7 +29,6 @@
       $("#ceksuhu").load("./sensor/suhu/cek.php");
       $("#statsuhu").load("./sensor/suhu/status.php");
       $("#logosuhu").load("./sensor/suhu/logo.php");
-    
     }, 500);
   });
 
@@ -63,7 +62,7 @@
     }, 500);
   });
   // end sensor
-  /**=====================================================================**/
+
   // start kontroll relay 
   function ubahstatus(value) {
     if (value == true) value = "ON";
@@ -81,18 +80,13 @@
     xmlhttp.send();
   }
   // end relay
+
   $(document).ready(function() {
     setInterval(function() {
       //khusus untuk load status relay pmpa air
       $("#status").load("./kontrol/relay/logo.php");
     }, 100);
   });
-  /**=====================================================================**/
-  // start servo
-
-  // end servo
 </script>
-
 </body>
-
 </html>

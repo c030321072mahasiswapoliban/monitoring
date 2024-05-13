@@ -30,8 +30,10 @@
                 <span>Pemeliharaan</span>
               </a>
             </li>
-
-          </ul>
+            <div id="datetime" style="font-size: 16px; font-family: 'Courier New', Courier, monospace; position: fixed; top: 10px;: 10px; right: 10px;">
+  <i class="far fa-clock"></i>
+</div>
+</ul>
 
         </div>
       </nav>

@@ -8,10 +8,10 @@ if (mysqli_connect_errno()) {
 $sql = mysqli_query($konek, 'SELECT * FROM tb_sensor ORDER BY id DESC');
 $data = mysqli_fetch_array($sql);
 
-$suhu = isset($data['suhu']) ? $data['suhu'] : '';
-$kekeruhan = isset($data['kekeruhan']) ? $data['kekeruhan'] : '';
-$ph = isset($data['ph']) ? $data['ph'] : '';
-$lv_air = isset($data['lv_air']) ? $data['lv_air'] : '';
+$suhu = $data['suhu'];
+$kekeruhan = $data['kekeruhan'];
+$ph = $data['ph'];
+$lv_air = $data['lv_air'];
 
 // cek data suhu
 if ($suhu == 0) $suhu = "Tidak Ada Data";
