@@ -3,6 +3,7 @@ $sql = mysqli_query($konek, "SELECT * FROM tb_kontrol");
 $data = mysqli_fetch_array($sql);
 $relay = $data['relay'];
 $relaysecond = $data['relaysecond'];
+$servo = $data['servo'];
 
 ?>
 
@@ -50,6 +51,13 @@ $relaysecond = $data['relaysecond'];
         <div class="divider card-divider"></div>
 
         <li class="progress-item">
+            <!-- range -->
+        <div style="text-align: center; font: size 18px;">
+          <label for="disabledRange" class="form-label">Posisi servo <span id="posisi"> <?php echo $servo; ?> </span> derajat</label>
+          <input type="range" class="form-range" id="disabledRange" min="0" max="180" step="1" value="<?php echo $servo; ?>" onchange="ubahposisi(this.value)">
+        </div>
+        <!-- end range -->
+        </li>
 
       </div>
 

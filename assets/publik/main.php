@@ -81,7 +81,7 @@ $relay = $data['relay'];
              <!-- clock -->
         <div class="card2 task-card">
         
-            <div> <?php include 'grafik.php'; ?></div> <!-- Menampilkan tanggal, hari, dan jam -->
+          
           </div>
         </div>
         <!-- end clock -->

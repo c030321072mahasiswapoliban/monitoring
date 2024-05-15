@@ -131,7 +131,24 @@
   /**=====================================================================**/
 
   // start servo
+  function ubahposisi(value) {
+      document.getElementById('posisi').innerHTML = value;
 
+      //ajax untuk membuat nilai status relay
+      var xmlhttp = new XMLHttpRequest();
+
+      xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          //ambil respon dari web setelah merubah nilai
+          document.getElementById('posisi').innerHTML = xmlhttp.responseText;
+
+        }
+      }
+      //eksekusi file php untuk merubah nilai databs
+      xmlhttp.open("GET", "./kontrol/servo/cek.php?pos=" + value, true);
+      //kirim data
+      xmlhttp.send();
+    }
   // end servo
   // refreshid
   var refreshid = setInterval(function() {
